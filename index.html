@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Bistrot Gourmand - Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">Le Bistrot Gourmand</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À Propos</a></li>
+        <li><a href="#menu-section">Menu</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+      </ul>
+    </nav>
+
+    <header id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Le Bistrot Gourmand</h1>
+        <p>Une cuisine authentique au cœur de la tradition</p>
+        <a href="#reservation" class="btn">Réserver une table</a>
+      </div>
+    </header>
+
+    <section id="about" class="about">
+      <h2>À Propos de Nous</h2>
+      <p>
+        Fondé en 2020, notre restaurant vous accueille dans un cadre chaleureux.
+        Nous mettons un point d'honneur à cuisiner des produits frais, locaux et
+        de saison pour émerveiller vos papilles à chaque bouchée.
+      </p>
+    </section>
+
+    <section id="menu-section" class="menu-section">
+      <h2>Notre Menu</h2>
+
+      <div class="filter-buttons">
+        <button class="btn-filter active" data-category="all">Tous</button>
+        <button class="btn-filter" data-category="entree">Entrées</button>
+        <button class="btn-filter" data-category="plat">Plats</button>
+        <button class="btn-filter" data-category="dessert">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- ENTREE  -->
+        <article class="menu-item" data-category="entree">
+          <img
+            src="https://picsum.photos/seed/entree1/300/200"
+            alt="Salade Landaise"
+          />
+          <div class="menu-item-info">
+            <h3>Salade Landaise</h3>
+            <p>Salade gourmande, gésiers, magret fumé et noix fraîches.</p>
+            <span class="price">12.00 €</span>
+          </div>
+        </article>
+        <!-- ENTREE  -->
+        <article class="menu-item" data-category="entree">
+          <img
+            src="https://picsum.photos/seed/entree2/300/200"
+            alt="Velouté de Potimarron"
+          />
+          <div class="menu-item-info">
+            <h3>Velouté de Potimarron</h3>
+            <p>Velouté onctueux, éclats de châtaignes et huile de truffe.</p>
+            <span class="price">10.50 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat1/300/200"
+            alt="Entrecôte Grillée"
+          />
+          <div class="menu-item-info">
+            <h3>Entrecôte Charolaise</h3>
+            <p>Accompagnée de frites maison et beurre maître d'hôtel.</p>
+            <span class="price">24.00 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat2/300/200"
+            alt="Pavé de Saumon"
+          />
+          <div class="menu-item-info">
+            <h3>Pavé de Saumon</h3>
+            <p>Saumon rôti, écrasé de pommes de terre et sauce aneth.</p>
+            <span class="price">21.50 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat3/300/200"
+            alt="Risotto aux Champignons"
+          />
+          <div class="menu-item-info">
+            <h3>Risotto aux Champignons</h3>
+            <p>Risotto crémeux, champignons de saison et parmesan.</p>
+            <span class="price">19.00 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat2/300/200"
+            alt="Pavé de Saumon"
+          />
+          <div class="menu-item-info">
+            <h3>Pavé de Saumon</h3>
+            <p>Saumon rôti, écrasé de pommes de terre et sauce aneth.</p>
+            <span class="price">21.50 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="dessert">
+          <img
+            src="https://picsum.photos/seed/dessert1/300/200"
+            alt="Fondant au Chocolat"
+          />
+          <div class="menu-item-info">
+            <h3>Fondant au Chocolat</h3>
+            <p>Cœur coulant, servi avec une boule de glace vanille Bourbon.</p>
+            <span class="price">8.50 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="dessert">
+          <img
+            src="https://picsum.photos/seed/dessert2/300/200"
+            alt="Tarte Tatin"
+          />
+          <div class="menu-item-info">
+            <h3>Tarte Tatin Maison</h3>
+            <p>Pommes caramélisées et sa crème fraîche d'Isigny.</p>
+            <span class="price">9.00 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="dessert">
+          <img
+            src="https://picsum.photos/seed/dessert3/300/200"
+            alt="Crème Brûlée"
+          />
+          <div class="menu-item-info">
+            <h3>Crème Brûlée à la Vanille</h3>
+            <p>Crème onctueuse, caramélisée à la perfection.</p>
+            <span class="price">7.50 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat3/300/200"
+            alt="Risotto aux Champignons"
+          />
+          <div class="menu-item-info">
+            <h3>Risotto aux Champignons</h3>
+            <p>Risotto crémeux, champignons de saison et parmesan.</p>
+            <span class="price">19.00 €</span>
+          </div>
+        </article>
+
+        <!-- ENTREE  -->
+        <article class="menu-item" data-category="entree">
+          <img
+            src="https://picsum.photos/seed/entree3/300/200"
+            alt="Bruschetta Italienne"
+          />
+          <div class="menu-item-info">
+            <h3>Bruschetta Italienne</h3>
+            <p>Tomates fraîches, basilic, mozzarella et huile d'olive.</p>
+            <span class="price">11.00 €</span>
+          </div>
+        </article>
+
+        <!-- DESSERT -->
+        <article class="menu-item" data-category="dessert">
+          <img
+            src="https://picsum.photos/seed/dessert4/300/200"
+            alt="Mousse au Chocolat"
+          />
+          <div class="menu-item-info">
+            <h3>Mousse au Chocolat</h3>
+            <p>Légère et aérienne, servie avec des copeaux de chocolat.</p>
+            <span class="price">7.00 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="dessert">
+          <img
+            src="https://picsum.photos/seed/dessert5/300/200"
+            alt="Panna Cotta aux Fruits Rouges"
+          />
+          <div class="menu-item-info">
+            <h3>Panna Cotta aux Fruits Rouges</h3>
+            <p>Crème onctueuse, coulis de fruits rouges maison.</p>
+            <span class="price">8.00 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat4/300/200"
+            alt="Poulet Rôti aux Herbes"
+          />
+          <div class="menu-item-info">
+            <h3>Poulet Rôti aux Herbes</h3>
+            <p>Accompagné de légumes de saison et pommes de terre rôties.</p>
+            <span class="price">22.00 €</span>
+          </div>
+        </article>
+
+        <!-- PLATS -->
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat5/300/200"
+            alt="Filet de Dorade"
+          />
+          <div class="menu-item-info">
+            <h3>Filet de Dorade</h3>
+            <p>Poisson frais, sauce vierge et légumes croquants.</p>
+            <span class="price">23.50 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat6/300/200"
+            alt="Côte de Veau"
+          />
+          <div class="menu-item-info">
+            <h3>Côte de Veau</h3>
+            <p>Accompagnée d'une sauce aux morilles et purée maison.</p>
+            <span class="price">26.00 €</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="plat">
+          <img
+            src="https://picsum.photos/seed/plat7/300/200"
+            alt="Tagliatelles aux Truffes"
+          />
+          <div class="menu-item-info">
+            <h3>Tagliatelles aux Truffes</h3>
+            <p>Pâtes fraîches, crème à la truffe et parmesan</p>
+            <span class="price">25.00 €</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+      <h2>Réserver une Table</h2>
+
+      <form id="res-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nom Complet :</label>
+          <input type="text" id="name" placeholder="Votre nom et prénom" />
+          <span class="error-msg" id="name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse Email :</label>
+          <input type="email" id="email" placeholder="votre@email.com" />
+          <span class="error-msg" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date de réservation :</label>
+          <input type="date" id="date" />
+          <span class="error-msg" id="date-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Nombre de personnes :</label>
+          <select id="guests">
+            <option value="">Sélectionnez...</option>
+            <option value="1">1 personne</option>
+            <option value="2">2 personnes</option>
+            <option value="3">3 personnes</option>
+            <option value="4">4 personnes</option>
+            <option value="5+">5 personnes et plus</option>
+          </select>
+          <span class="error-msg" id="guests-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message"
+            >Message ou demande particulière (Optionnel) :</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Allergies, préférence de table..."
+          ></textarea>
+        </div>
+        <div id="erreur"></div>
+        <div id="success-message"></div>
+        
+
+        <button type="submit" class="btn btn-submit">
+          Confirmer la réservation
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>📍 12 Avenue des Saveurs, 75001 Paris</p>
+        <p>📞 01 23 45 67 89 | ✉️ contact@bistrotgourmand.fr</p>
+        <p>
+          © <span id="year"></span> Le Bistrot Gourmand. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
