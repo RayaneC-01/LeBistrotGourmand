@@ -22,10 +22,52 @@ html {
   scroll-behavior: smooth; /* Permet un défilement fluide lors du clic sur la nav */
 }
 
+/******** Animation de couleur en fond sur toute la page avec keyframes ********/
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #f8fafc;
+  }
+  15% {
+    background-color: #fef3c7;
+  }
+  25% {
+    background-color: #fef3c7;
+  }
+  30% {
+    background-color: #fef9c3;
+  }
+  40% {
+    background-color: #fef9c3;
+  }
+  50% {
+    background-color: #d1fae5;
+  }
+  60% {
+    background-color: #d1fae5;
+  }
+  70% {
+    background-color: #e0f2fe;
+  }
+  75% {
+    background-color: #e0f2fe;
+  }
+  85% {
+    background-color: #f0f9ff;
+  }
+  90% {
+    background-color: #f0f9ff;
+  }
+  100% {
+    background-color: #f8fafc;
+  }
+}
+
 body {
   font-family: var(--font-main);
   color: var(--text-dark);
   line-height: 1.6;
+  animation: backgroundAnimation 10s infinite alternate; /* Exigence : animation de fond */
 }
 
 /* Styles réutilisables pour les titres et boutons */
