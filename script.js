@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Si la page est scrollée de plus de 50px, on ajoute la classe "scrolled" à la navbar
         if (window.scrollY > 70) {
             nav.classList.add("scrolled");
-
             nav.style.color = "white"; // Change la couleur du texte en blanc
             nav.style.backgroundColor = "rgb(116, 155, 219)"; // Change la couleur de fond en rouge
             nav.style.borderBottom = "2px solid rgb(255, 255, 255)"; // Ajoute une bordure blanche en bas
